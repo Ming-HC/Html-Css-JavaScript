@@ -1,0 +1,304 @@
+/* *, *:before, *:after {
+	box-sizing: border-box
+}
+*/
+/*body {
+	margin: 0px;
+}
+.GLOBALWRAPPER {
+	/*margin: 0px 10px auto 10px;
+}
+.WRAPPER {
+	height: 1200px;
+  /*padding: 0 10px 0 10px;
+	font-family: Georgia, times, serif;
+}
+div .HEADER {
+	height: 250px;
+	margin: 0 auto 0 auto;
+	/*background-color: orange;
+	vertical-align: middle;
+}*/
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.WRAPPER {
+	height: 1400px;
+}
+.HEADER {
+  font-family: Verdana;
+}
+.HEADER nav {
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+.HEADER label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+.HEADER nav ul {
+  float: right;
+  margin-right: 20px;
+}
+.HEADER nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+.HEADER nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.HEADER nav ul li a.active,.HEADER nav ul li a:hover {
+  background: #1b9bff;
+	color: black;
+  transition: .5s;
+}
+.HEADER .checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+.HEADER #check {
+  display: none;
+}
+@media (max-width: 952px) {
+  .HEADER label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .HEADER nav ul li a{
+    font-size: 16px;
+  }
+} /*縮1*/ /*縮1*/
+@media (max-width: 858px) {
+  .HEADER .checkbtn{
+    display: block;
+  }
+	.HEADER nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .HEADER nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .HEADER nav ul li a {
+    font-size: 20px;
+  }
+  .HEADER a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  .HEADER #check:checked ~ ul {
+    left: 0;
+  }
+} /* phone css? */
+
+
+
+
+/*.top_hyperlink {
+
+	height: 25%;
+	margin: 0 auto 0 auto;
+	background: purple;
+}*/
+/*.Slogo {
+	float: left;
+	background-position: center center;
+	margin: 5px;
+	width: 60px;
+	height: 30px;
+}
+.top_hyperlink {
+	/*position: fixed;
+	display: inline-block;
+	height: 50px;
+	weight: 1000px;
+	margin-left: 100px;
+  color: #ffffff;
+	background: -webkit-radial-gradient(circle,gray,white);
+	background: -o-radial-gradient(circle,gray,white);
+	background: -moz-radial-gradient(circle,gray,white);
+	background: radial-gradient(circle,gray,white);
+	/*vertical-align: middle;
+}
+.top_hyperlink ul {
+	vertical-align: middle;
+	padding: 0px;
+}
+.top_hyperlink li {	/*連結文字間距
+  display: inline;
+  margin-right: 40px;
+}
+/*.top_hyperlink img {	/*連結文字間距
+  margin: 10px 40px 10px 20px;
+}
+.top_hyperlink li a {	/*連結文字顏色白色
+  color: #ffffff;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.top_hyperlink li a:hover, .top_hyperlink li a.current {	/*連結現在位置顏色
+  color: #000000;
+}
+.top_hyperlink li a:hover {
+  /*box-shadow: 0 0 10px gray, 0 0 40px gray, 0 0 80px gray;
+	/*box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2)
+}
+.top_hyperlink .space {
+	letter-spacing: 1em;
+	visibility: hidden;
+}
+.top_hyperlink a .space {
+	display: none;
+}
+.top_block {
+	height: 200px;
+	margin: 0px;
+	/*padding-top: 50px;		/*when top_hyperlink position fixed, open
+	/*background: yellow;
+}
+.top_block img {
+	height: 85%;
+	margin: 5px;
+}*/
+
+
+
+
+.middle {
+	height: 1210px;
+}
+.article {
+	float: left;
+	margin: 10px;
+	display: inline-block;
+}
+
+.container {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.container .card {
+  position: relative;
+}
+.container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+.container .card .face.face1 {
+  position: relative;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+.container .card:hover .face.face1 {
+  background: #ff0057;
+
+  transform: translateY(0);
+}
+.container .card .face.face1 .content {
+  text-align: center;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+.container .card .face.face1 .content img { /*縮小*/
+  max-width: 100px;
+}
+.container .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+.container .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  transform: translateY(-100px);
+}
+.container .card:hover .face.face2 {
+  transform: translateY(0);
+}
+.container .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+}
+.container .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+.container .card .face.face2 .content a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.sidebar {
+	float: right;
+	width: 250px;
+	margin: 1% 10px 1% auto; /*上右下左*/
+	display: inline-block;
+	background: red;
+}
+.footer {
+	display: inline-block;
+	height: 100px;
+	margin: 0;
+	width: 100%;
+}
+.footer .social {
+	float: left;
+	padding: 0 10px 10px 10px;
+	width: 69%;
+}
+.footer .rule {
+	float: right;
+	padding: 0 10px 10px 0;
+	margin-top: 80px;
+	width: 30%;
+}
